@@ -1,0 +1,38 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 1rem;
+    font-size: 2rem;
+    font-family: 'Times New Roman', Times, serif;
+    background-color: blue;
+    height: 500vh;
+}
+
+div {
+    border: 1px solid gray;
+    background-color: #f5f5f5;
+    width: 40%;
+    height: 40px;
+    font-size: 50%;
+    font-size: 20px;
+}
+
+.pegajoso {
+    background-color: bisque;
+    position: sticky;
+    top: 0px;
+    z-index: 100;
+
+
+}
+
+.estatico {
+    position: static;
+
+}
+
+p {
+    font-size: 10px;
+}
