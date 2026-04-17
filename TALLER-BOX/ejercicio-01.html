@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 1 - Grid CSS</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: #f0f0f0;
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: 1fr;
+            gap: 10px;
+            width: 600px;
+            height: 250px;
+            padding: 20px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            
+            grid-template-areas:
+                "caja1 caja2 caja3";
+        }
+
+        .caja1 {
+            grid-area: caja1;
+            background-color: darkorange;
+        }
+
+        .caja2 {
+            grid-area: caja2;
+            background-color: #006666;
+        }
+
+        .caja3 {
+            grid-area: caja3;
+            background-color: #6B0E47;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="caja1"></div>
+        <div class="caja2"></div>
+        <div class="caja3"></div>
+    </div>
+</body>
+</html>
